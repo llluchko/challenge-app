@@ -11,7 +11,7 @@ const MapScreen = () => {
   const filters = useAppSelector((state) => state.map.filters);
   const [markers, setMarkers] = useState<MarkerData[]>([]);
 
-  // Fetch markers fro API
+  // Fetch markers from API
   const markersData = useMemo(
     () =>
       getMarkersQueryInstance.data != undefined
